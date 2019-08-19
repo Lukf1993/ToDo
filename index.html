@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <link rel='stylesheet' href='css/fullcalendar.css' />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <p class="radioButtons js-radioButtons">
+            <label class="button">
+                <input type="radio" name="rotate-cube-side" value="front" checked />Start
+            </label>
+            <label class="button ">
+                <input type="radio" name="rotate-cube-side" value="right" />Lista do zrobienia
+            </label>
+            <label class="button">
+                <input type="radio" name="rotate-cube-side" value="back" />Lista zrobione
+            </label>
+            <label class="button">
+                <input type="radio" name="rotate-cube-side" value="left" />Kalendarz
+            </label>
+            <label class="button">
+                <input type="radio" name="rotate-cube-side" value="top" />Info
+            </label>
+            <label class="button">
+                <input type="radio" name="rotate-cube-side" value="down" />Cichy Żarcik :)
+            </label>
+        </p>
+    <div class="body2">
+            <div class="buttons">
+                <h2 class="js-text-head text-head">&nbsp;</h2>
+                <div class="add-todo-form js-add-todo-form">
+                    <div class="inputText js-inputText">
+                        <input type="text" placeholder=""  class="add-todo-form__text js-add-todo-form__text">
+                        <a href="#" class="add-todo-form__add js-add-todo-form__add"><span class="icon-1"></span>Dodaj</a>
+                    </div>
+                    <div class="box_buttons_form">
+                        <a href="#" class="buttons_form add-todo-form--move js-add-todo-form--move"><span class="icon-2"></span>Oznacz jako skończone</a>
+                        <a href="#" class="buttons_form delete js-delete"><span class="icon-4"></span>Usuń</a>
+                        <a href="#" class="buttons_form done_toDo--return js-done_toDo--return"><span class="icon-1"></span>Przywróć</a>
+                    </div>
+                </div>
+            </div>
+
+            <main class="main">
+                <div class="cube js-cube">
+                    <div class="cube_side cube_side--front"><img class="logo" src="img/logo-neti.jpg"></div>
+                    <div class="cube_side cube_side--back">
+                        <h2 class="text-head liHead">Zakończone Zadania</h2>
+                        <ul class="Done-list list js-Done-list"></ul>
+                    </div>
+                    <div class="cube_side cube_side--right">
+                        <h2 class="text-head liHead">Twoje Zadania</h2>
+                        <ul class="ToDo-List list js-ToDo-List"></ul>
+                    </div>
+                    <div class="cube_side cube_side--left">
+                        <div id="calendar"></div>
+                    </div>
+                    <div class="cube_side cube_side--top">
+                        <ul class="info">
+                            <li class="info-item">Wydarzenie w kalendarzu tworzymy przez klik na dniu.</li>
+                            <li class="info-item">Przytrzymanie LPM i przeciągniecie po dniach utworzy wydarzenie na pare dni.</li>
+                            <li class="info-item">W osobnym dniu działa to tak samo na godzinach.</li>
+                            <li class="info-item">Kliknięcie LPM na wydarzenie usumie je.</li>
+                        </ul>
+                    </div>
+                    <div class="cube_side cube_side--down">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2_dgln9NkCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </main>
+    </div>
+
+    <script src="JS/jquery-3.3.1.js"></script>
+    <script src="JS/moment.min.js"></script>
+    <script src="JS/fullcalendar.js"></script>
+    <!-- <script src="JS/script.js"></script> -->
+    <!-- <script src="JS/drugi.js"></script> -->
+    <script src="JS/trzeci.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+.add-todo-form {
+    opacity: 0;
+    &__add{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border: 2px solid;
+        padding: 10px;
+        opacity: 0;
+    }
+    .inputText{
+        display: flex;
+        margin: 0 auto;
+        max-width: 20%;
+    }
+    &__text{
+        opacity: 0;
+        width: 90%;
+        height: 40px;
+        font-size: 20px;
+    }
+    .box_buttons_form{
+        height: 100px;
+        display: flex;
+        }
+    .buttons_form{
+        text-decoration: none;
+        text-align: center;
+        opacity: 0;
+        flex-grow: 1;
+        color: #000;
+        font-size: 20px;
+        visibility: hidden;
+        flex: 0;
+        width: 0;
+        height: 0;
+        transition: 300ms;
+        border-bottom: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid#000;
+        }
+        .opacity{
+            opacity: 1;
+            visibility: visible;
+            flex: 1;
+            width: auto;
+            height: auto; margin: 20px;
+            padding: 15px;
+        }
+    }
+}
+.opacity{opacity: 1;}

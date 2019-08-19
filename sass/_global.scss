@@ -1,0 +1,56 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background: #d9d9d9;
+    position: relative;
+    padding: 10px;
+
+    strong{
+        font-weight: bold;
+    }
+    .addText{
+        display: block;
+        margin: 20px auto;
+        width: 500px;
+        height: 50px;
+        font-size: 25px;
+        border-color: black;
+    }
+    .buttons{
+        text-decoration: none;
+        font-size: 20px;
+        margin: 15px;
+        color: black;
+        display: inline-block;
+        transition: 500ms;
+        &:hover{
+            color: darkgoldenrod;
+        }
+    }
+    .active{ color: red;}
+    .js-item{
+        display: flex;
+        justify-content: center;
+     }
+    input:checked + label{
+        color: red;
+    }
+    .main-list{
+        display: flex;
+        .column{
+            flex-grow: 1;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
